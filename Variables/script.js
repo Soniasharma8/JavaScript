@@ -1,5 +1,3 @@
-/*
-
 // Question 1: Declare a variable named myPathVariable and set its value to "Hello World!". Print this variable in console.log().
 
   var myPathVariable = "Hello World!"
@@ -149,83 +147,105 @@ firstName = "priya";
 let myVariable; 
 console.log(myVariable); 
 
-*/
-
-
-
 
 //Question 21: Create a globalVariable with let and set its value as "Main Global Hoon". Then create an if block {} inside another let blockVariable = "Main Block Mein Hoon";. Print both globalVariable and blockVariable inside the if block. Try to print blockVariable outside the if block. What error is occurring? Explain.
 
-// let globalVariable = "I'm a global variable";
+let globalVariable = "I'm a global variable";
 
-// if (true) { 
-//     let blockVariable = "I'm in a block";
-//     console.log("Inside block - Global:", globalVariable);  
-//     console.log("Inside block - Block:", blockVariable);    
-// }
+if (true) { 
+    let blockVariable = "I'm in a block";
+    console.log("Inside block - Global:", globalVariable);  
+    console.log("Inside block - Block:", blockVariable);    
+}
 
-// console.log("Outside block - Block:", blockVariable); 
+console.log("Outside block - Block:", blockVariable); 
 
 
 //Question 22: Create a variable oldVar using var and keep its value as "First Value". Then again declare var oldVar = "New Value"; in the same file. Print oldVar after both the declarations. What error occurs? Let's compare it.
 
-// var oldVar = "First Value";
-// var oldVar = "New Value";
-// console.log(oldVar);
+var oldVar = "First Value";
+var oldVar = "New Value";
+console.log(oldVar);
 
 
 //Question 23: Create a const variable userRole and set its value to "Admin". Create a function changeRole() in which try to change the userRole to "Editor". Call the function. What error occurs? Explain.
 
-// const userRole = "Admin";
+const userRole = "Admin";
 
-// function changeRole() {
-//   console.log("Inside before change:", userRole); 
-//   userRole = "Editor"; 
-//   console.log("Inside after change:", userRole);
-// }
+function changeRole() {
+  console.log("Inside before change:", userRole); 
+  userRole = "Editor"; 
+  console.log("Inside after change:", userRole);
+}
 
-// changeRole();
+changeRole();
 
 
 //Question 24: Make var tempvar = "inside value"; inside an f block. Print tempvar outside the f block. What is the output? Compare it with let and cust.
 
-// if(true) {
-//   var tempVar = "Internal Value";
-// }
-// console.log(tempVar);
+if(true) {
+  var tempVar = "Internal Value";
+}
+console.log(tempVar);
 
 
 //Question 25: Try to print console.log(hoistedVar); without declaring it. What error is coming? Now declare hoistedVar as var and assign value 10. Place console.log(hoistedVar); above the declaration and then below the declaration. Compare the outputs.
 
-// console.log(hoistedVar);
-// var hoistedVar = 10;
+console.log(hoistedVar);
+var hoistedVar = 10;
 
-// console.log(hoistedVar);
+console.log(hoistedVar);
 
 
 //Question 26: Try same Question 5 with let. Print console.log(tdzVar); without declaring it. Declare tdzVar with let and assign value 20. Place console.log(tdzVar); above the declaration and then below the declaration. Compare the outputs.
 
-// console.log(tdzVar);
-// let tdzVar = 20;
-// console.log(tdzVar);
+console.log(tdzVar);
+let tdzVar = 20;
+console.log(tdzVar);
 
 
 //Question 27: Create a function showMe(). Inside this function, first write console.log(secret); then declare secret = "Top Secret";. Call the function. What error is occurring? Explain.
 
-// function showMe() {
-//   console.log(secret);
-//   let secret = "Top Secret";
-// }
-// showMe();
+function showMe() {
+  console.log(secret);
+  let secret = "Top Secret";
+}
+showMe();
 
 
 //Question 28: Create an array myNumbers using const and put the values [1, 2, 3] in it. Can you add 4 to myNumbers (myNumbers.push(4);)? Can you reassign myNumbers to some other array (myNumbers = [5, 6];)? Try it and explain the outputs/errors.
 
-// const myNumbers = [1,2,3];
-// myNumbers.push(4);
+const myNumbers = [1,2,3];
+myNumbers.push(4);
 
-// console.log(myNumbers);
-// myNumbers = [5,6];
+console.log(myNumbers);
+myNumbers = [5,6];
 
 
-//Question 29:
+//Question 29: Create an object userProfile using const and put the values { name: "Alice", age: 30 } in it. Can you change the name property of userProfile to "Bob" (userProfile.name = "Bob";)? Can you reassign userProfile to some other object (userProfile = { city: "NY" };)? Explain.
+
+const userProfile = {name: "Sonia", age: 23};
+userProfile.name = "Sharma";
+userProfile = {city: "NY"};
+console.log(userProfile);
+
+//Question 30: Create a nested object product that has name, price, and details (another object that has manufacturer and weight) properties. Create a product variable using const. Update the value of product.details.manufacturer. Is this allowed? Print.
+
+const product = { 
+  name: "Laptop", 
+  price: 12000, 
+  details: {
+  manufacturer: "Dell", 
+  weight: "1.5kg"
+}
+}; 
+
+product.details.manufacturer = "HP";
+product = { newProperty: "newValue" };
+console.log(product);
+
+
+
+
+
+
