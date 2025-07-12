@@ -64,6 +64,49 @@ console.log(message);
 
 
 
+//Question: Ek variable currentYear banao aur usmein current year number mein store karo (e.g., 2025). Ab currentYear ki value ko next year mein update karo. Updated currentYear ko print karo.
+
+/*
+let currentYear = 2025;
+currentYear = currentYear + 1;
+console.log("Next Year:", currentYear);
+*/ 
+
+/*
+let num = 10;
+num = num / 2;
+console.log(num);
+*/
+/*
+const piValue = 3.14;
+console.log(piValue);
+
+
+let userAge = 25;       
+console.log("Initial userAge:", userAge); 
+
+userAge = userAge + 1; 
+
+
+console.log("Updated userAge:", userAge); 
+
+
+
+const appName = "MyApp";
+
+const appName = "NewApp";
+console.log(appName);
+*/
+
+
+const appName = "My App";
+
+console.log("Initial appName:", appName); 
+
+
+console.log("Attempted to redeclare appName (this line might not run if error occurs):", appName);
+
+
 
 
 
