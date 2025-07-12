@@ -99,12 +99,7 @@ console.log(appName);
 */
 
 
-const appName = "My App";
 
-console.log("Initial appName:", appName); 
-
-
-console.log("Attempted to redeclare appName (this line might not run if error occurs):", appName);
 
 
 
