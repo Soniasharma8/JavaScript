@@ -164,3 +164,69 @@
 // console.log(a == b);
 // console.log(a === b);
 
+
+//Question 21: NaN (Not-a-Number) is a special value in JavaScript. What will be the output of console.log(typeof NaN); and why? Is NaN === NaN true or false? Explain.
+//Answer: The output of console.log(typeof NaN) will be "number". This is because NaN
+//is a number, even though it's a special value that doesn't represent a valid number.
+//NaN is not equal to any number, including itself. This is why NaN === NaN returns fals
+//e. This is a quirk of the JavaScript language, and it can sometimes cause problems wh
+//en working with NaN values.
+//  let a = NaN;
+// console.log(typeof a);
+//  console.log(a === a);
+
+
+//Question 22: Object and Primitive Comparison: Explain why {} == {} and [] == [] gives false result while 1 == 1 gives true. Explain the concept of reference equality and value equality in JavaScript.
+
+ // {} == {} and [] == [] gives false because JavaScript compares objects and arrays according to their memory location (reference). Every {} or [] expression creates a new and unique object/array in the memory.
+
+//  But 1 == 1 gives true because JavaScript compares primitive values (like numbers, strings, booleans) according to their actual value. 1 is a primitive value and the value of 1 is equal to 1.
+
+
+//Question 23: Type Coercion Nuances: Predict the output and explain why it occurs:
+
+// console.log(" " + 0);
+// console.log("" - 1);
+// console.log(null + 1);
+// console.log(undefined + 1);
+// console.log([] + {});
+// console.log({} + []);
+
+
+//Question 24: Symbol with json.stringify(): Can you stringify a property with a symbol key with json.stringify()? Give an example and explain what happens.
+
+    // const myUniqueId = Symbol('user_id');
+    // const user = {
+    //     name: 'Sonia',
+    //     age: 30,
+    //     [myUniqueId]: "sonia123"
+    // };
+    // console.log("Original Object:");
+    // console.log(user);
+    // const jsonString = JSON.stringify(user);
+    // console.log("\nJSON String after stringify():");
+    // console.log(jsonString);
+    // const parsedObject = JSON.parse(jsonString);
+    // console.log("\nParsed Object from JSON String:");
+    // console.log(parsedObject);
+
+
+    //Question 25: Boxing (Wrapper Objects): Explain how JavaScript allows access to the length property or toUpperCase() method on a primitive value (such as the string "hello"), even though primitives are not objects. What is this concept called?
+
+    // let myString = "hello";
+    // console.log(myString.length);
+    // console.log(myString.toUpperCase());
+    
+    // let myNumber = 10;
+    // console.log(myNumber.toFixed(2));
+    
+    // let myBoolean = true;
+    // console.log(myBoolean.valueOf());
+    
+ //Question 25: What is the difference between implicit type coercion and explicit type conversion? Give two examples of each.
+    
+    
+ 
+
+
+
