@@ -1,3 +1,4 @@
+/*
 // Question 1: The value of num1 is 10 and the value of num2 is 5. Create a new variable sum and store the total of num1 and num2 in it. Print the sum in the console.
 
 let num1 = 10;
@@ -138,3 +139,51 @@ console.log(shouldRelax);
 let isRaining = true;
 let isNotRaining = !isRaining;
 console.log(isNotRaining);
+
+
+
+// Question 21: The totalPrice of a shopping cart is 0. You buy item1 whose price is 250.50 and item2 whose price is 120.75. Update the totalPrice by using += operator for each item purchase. Lastly, print the totalPrice in the console and print it after applying 10% discount (multiply by 0.90).
+
+let totalPrice = 0;
+let item1 = 250.50;
+totalPrice += item1;
+let item2 = 120.75;
+totalPrice += item2;
+console.log(totalPrice);
+totalPrice *= 0.90;
+console.log(totalPrice);
+
+
+//Question 22: A student's maths score is 85 and science score is 78. English score is 92. Create a variable totalScore and store the total of three subjects in it. Now divide totalScore by 3 and find averageScore. Print averageScore in the console.
+
+let mathScore = 85;
+let scienceScore = 78;
+let englishScore = 92;
+let totalScore = mathScore + scienceScore + englishScore;
+console.log(totalScore);
+let averageScore = totalScore / 3;
+console.log(averageScore);
+
+*/
+
+
+// Question 23: 
+
+// let initialBudget = 10000;
+// let rent = 3500;
+// let groceries = 1500;
+// let transport = 500;
+// initialBudget -= rent;
+// initialBudget -= groceries;
+// initialBudget -= transport;
+// console.log(initialBudget);
+
+
+// Question 24: A user has isVerified (true/false), hasPaidSubscription (true/false), and age (number) variables. isVerified = true; hasPaidSubscription = false; age = 17; Check that a user can login only if he is verified and (is a paid subscriber or is 18 years old or older). Store the result in the canLogin variable and print it.
+
+// let isVerified = true;
+// let hasPaidSubscription = false;
+// let age = 17;
+// let canLogin = isVerified && (hasPaidSubscription || age >= 18);
+// console.log(canLogin);
+
