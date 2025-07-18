@@ -1,4 +1,4 @@
-/*
+
 // Question 1: The value of num1 is 10 and the value of num2 is 5. Create a new variable sum and store the total of num1 and num2 in it. Print the sum in the console.
 
 let num1 = 10;
@@ -164,26 +164,73 @@ console.log(totalScore);
 let averageScore = totalScore / 3;
 console.log(averageScore);
 
-*/
-
 
 // Question 23: 
 
-// let initialBudget = 10000;
-// let rent = 3500;
-// let groceries = 1500;
-// let transport = 500;
-// initialBudget -= rent;
-// initialBudget -= groceries;
-// initialBudget -= transport;
-// console.log(initialBudget);
+let initialBudget = 10000;
+let rent = 3500;
+let groceries = 1500;
+let transport = 500;
+initialBudget -= rent;
+initialBudget -= groceries;
+initialBudget -= transport;
+console.log(initialBudget);
 
 
 // Question 24: A user has isVerified (true/false), hasPaidSubscription (true/false), and age (number) variables. isVerified = true; hasPaidSubscription = false; age = 17; Check that a user can login only if he is verified and (is a paid subscriber or is 18 years old or older). Store the result in the canLogin variable and print it.
 
-// let isVerified = true;
-// let hasPaidSubscription = false;
-// let age = 17;
-// let canLogin = isVerified && (hasPaidSubscription || age >= 18);
-// console.log(canLogin);
+let isVerified = true;
+let hasPaidSubscription = false;
+let age = 17;
+let canLogin = isVerified && (hasPaidSubscription || age >= 18);
+console.log(canLogin);
 
+
+//Question 25: Discount will be applied in a store if itemPrice is more than 1000 OR if customerType is 'premium' AND isFirstPurchase is true. itemPrice = 800; customerType = 'regular'; isFirstPurchase = true; Check whether the customer is eligible for discount or not. Store the result in isEligibleForDiscount and print it.
+
+let itemPrice = 800;
+let customerType = 'regular';
+let isFirstPurchase = true;
+let isEligibleForDiscount = (itemPrice > 1000) || (customerType === 'premium' && isFirstPurchase === true);
+
+console.log("Is customer eligible for discount?", isEligibleForDiscount);
+
+
+//Question 26: Predict and then run the code and see what the output will be: let val1 = 10; let val2 = "20"; let result = val1 + val2; console.log(result); Explain why this happened.
+
+let val1 = 10;
+let val2 = "20";
+let result = val1 + val2;
+console.log(result);
+
+
+//Question 27:
+
+let a = 5;
+let b = "3";
+let c = 2;
+let finalResult = a + b * c;
+console.log(finalResult);
+
+
+//Question 28:
+
+let x = 7;
+let y = x++;
+console.log("x:", x);
+console.log("y:", y);
+
+//Question 29:
+
+let counter = 10;
+let newValue = --counter * 2;
+console.log("counter:", counter);
+console.log("newValue:", newValue);
+
+//Question 30:
+
+let marks = 75;
+
+let status = (marks >= 60) ? "Pass" : "Fail";
+
+console.log("Student Status:", status);
