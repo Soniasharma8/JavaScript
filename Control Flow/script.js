@@ -102,7 +102,7 @@ if (dayNum === 1) {
                         } else {
                             console.log("Invalid day number.");
                             }
- */
+
 
 
  //Question 9: 
@@ -118,3 +118,48 @@ console.log("Thanda Mausam Hai!");
 console.log("Pata Nahin Kaisa Mausam Hai!");
 }
 
+ 
+//Question 10: 
+let cuisine = "Italian";
+if (cuisine === "Indian") {
+console.log("Sarso da saag Makki di Roti");
+} else if (cuisine === "Chinese") {
+    console.log("Chowmein");
+} else if (cuisine === "Italian") {
+    console.log("Pizza");
+} else {
+ console.log("Tell me another cuisine!");
+ }
+
+
+//Question 11: 
+
+let dayNum = 2;
+switch (dayNum) {
+ case 1:
+    console.log("Sunday");
+  break;
+  case 2:
+    console.log("Monday");
+  break;
+  case 3:
+    console.log("Tuesday");
+    break;
+    case 4:
+    console.log("Wednesday");
+  break;
+  case 5:
+    console.log("Thursday");
+  break;
+  case 6:
+    console.log("Friday");
+  break;
+  case 7:
+   console.log("Saturday");
+   break;
+   default:
+   console.log("Invalid day");
+     break;
+}
+            
+*/
