@@ -1,4 +1,4 @@
-/*
+
 //Question 1: Positive, Negative or Zero?Create a variable num and store a number in it. Check: If the number is positive, print "Number is positive!". If the number is negative, print "Number is negative!". And if the number is zero, print "Number is zero!".
 
 let num = 2;
@@ -10,9 +10,7 @@ if (num > 0) {
 } else 
     console.log("Zero");
 
- 
-
-//Question 2: 
+ //Question 2: 
 
 let number = 10;
 if (number % 2 === 0) {
@@ -20,7 +18,6 @@ if (number % 2 === 0) {
 } else {
     console.log("odd");
 }
-
 
 //Question 3: 
 
@@ -32,8 +29,6 @@ else {
     console.log("You are not Eligible for Voting");
 }
 
-
-
 //Question 4:
 
 let purchaseAmount = 1100;
@@ -43,8 +38,6 @@ if (purchaseAmount > 1000) {
         console.log("No discount");
         }
 
-
-
 //Question 5:
 
 let score = 51;
@@ -53,7 +46,6 @@ if (score >= 50 ) {
 } else {
     console.log("Fail");
 }
-
 
 //Question 6:
 let lightHouse = "Red";
@@ -67,7 +59,7 @@ if (lightHouse === "Red") {
             console.log("Invalid light color.");
         }
           
- 
+
 //Question 7:
 
 let marks = 75;
@@ -81,8 +73,7 @@ if (marks >= 90 && marks <= 100) {
         console.log("Fail");
     }
       
-      
-  //Question 8:  
+ //Question 8:  
 
 let dayNum = 8;
 if (dayNum === 1) {
@@ -103,8 +94,6 @@ if (dayNum === 1) {
                             console.log("Invalid day number.");
                             }
 
-
-
  //Question 9: 
 
  let weather = "Rainy";
@@ -118,7 +107,7 @@ console.log("Thanda Mausam Hai!");
 console.log("Pata Nahin Kaisa Mausam Hai!");
 }
 
- 
+
 //Question 10: 
 let cuisine = "Italian";
 if (cuisine === "Indian") {
@@ -130,7 +119,6 @@ console.log("Sarso da saag Makki di Roti");
 } else {
  console.log("Tell me another cuisine!");
  }
-
 
 //Question 11: 
 
@@ -162,7 +150,6 @@ switch (dayNum) {
      break;
 }
             
-
 //Question 12: 
 
 let num1 = 15;
@@ -195,8 +182,6 @@ switch (operation) {
     console.log("Invalid operation!");
 }
 
-
-
 //Question 13:
 
 let monthNum = 4;
@@ -216,4 +201,33 @@ switch (monthNum) {
     default: console.log("Invalid Month Number");
 }
 
-*/
+//Question 14:
+
+let userRole = "editor"; 
+
+switch (userRole) {
+  case "admin": 
+    console.log("Full access granted!");
+    break; 
+  case "editor": 
+    console.log("Edit permissions given.");
+    break;
+  case "viewer": 
+    console.log("Read-only access.");
+    break;
+  default: 
+    console.log("Unknown user role.");
+}
+
+//Question 15:
+
+let productCategory = "Clothing";
+switch (productCategory) {
+    case "Electronics": console.log("This product is an electronic device.");
+    break;
+    case "Clothing": console.log("This product is clothing.");
+    break;
+    case "Home Goods": console.log("This product is for the home.");
+    break;
+    default: console.log("This product category is not recognized.");
+    }
