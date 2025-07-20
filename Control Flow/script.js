@@ -162,4 +162,58 @@ switch (dayNum) {
      break;
 }
             
+
+//Question 12: 
+
+let num1 = 15;
+let num2 = 5;
+
+let operation = "/"; 
+let result; 
+switch (operation) {
+  case "+": 
+    result = num1 + num2;
+    console.log(`Addition: ${num1} + ${num2} = ${result}`);
+    break; 
+  case "-": 
+    result = num1 - num2;
+    console.log(`Subtraction: ${num1} - ${num2} = ${result}`);
+    break;
+  case "*": 
+    result = num1 * num2;
+    console.log(`Multiplication: ${num1} * ${num2} = ${result}`);
+    break;
+  case "/": 
+    if (num2 === 0) {
+      console.log("Error: Division by zero is not allowed.");
+    } else {
+      result = num1 / num2;
+      console.log(`Division: ${num1} / ${num2} = ${result}`);
+    }
+    break;
+  default: 
+    console.log("Invalid operation!");
+}
+
+
+
+//Question 13:
+
+let monthNum = 4;
+switch (monthNum) {
+    case 1: console.log("January"); break;
+    case 2: console.log("February"); break;
+    case 3: console.log("March"); break;
+    case 4: console.log("April"); break;
+    case 5: console.log("May"); break;
+    case 6: console.log("June"); break;
+    case 7: console.log("July"); break;
+    case 8: console.log("August"); break;
+    case 9: console.log("September"); break;
+    case 10: console.log("October"); break;
+    case 11: console.log("November"); break;
+    case 12: console.log("December"); break;
+    default: console.log("Invalid Month Number");
+}
+
 */
