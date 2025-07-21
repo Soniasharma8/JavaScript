@@ -44,6 +44,35 @@ for (let i = 1; i <= 10; i++) {
     
 }
 
+
+
+// Question 7:
+
+for (let i = 10; i >= 1; i-- ) {
+    console.log(i);
+}
+
+
+
+// Question 8:
+
+let fruits = ["apple", "banana", "cherry"];
+for (let i = 0; i <fruits.length; i++) {
+    console.log(fruits[i]);
+    
+}
+
+
+// Question 9:
+
+let numbers = [3, 7, 1, 9, 2];
+let max = numbers[0];
+for (let i = 1; i < numbers.length; i++) {
+    if(numbers [i] > max) {
+        max = numbers[i];
+    }
+}
+console.log(max);
 */
 
-// Question 7: 
+// Question 10:
