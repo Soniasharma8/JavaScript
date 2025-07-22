@@ -73,6 +73,35 @@ for (let i = 1; i < numbers.length; i++) {
     }
 }
 console.log(max);
+
+
+// Question 10: Count Vowels in a String
+let text = "hello world";
+let vowelCount = 0;
+let vowels = "aeiou";
+for (let i = 0; i < text.length; i++) {
+    let char = text[i].toLowerCase();
+    if (vowels.includes(char)) {
+        vowelCount++;
+    }
+}
+console.log("Vowel count:", vowelCount);
+
+
+
+// Question 11:
+let a = "Hello";
+for (let i =  0; i < 5; i++) {
+    console.log(a);
+}
+
 */
 
-// Question 10:
+let nums = [1, 2, 3, 4, 5, 6];
+let evenSum = 0;
+for (let i = 0; i < nums.length; i++) {
+    if (nums[i] % 2 === 0) {
+        evenSum += nums[i];
+    }
+}
+console.log("Sum of even numbers:", evenSum);
