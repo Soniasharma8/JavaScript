@@ -120,7 +120,56 @@ for (let key in person) {
 
 let colors1 = ["red", "green", "blue"];
 for (let color of colors1) {
-console.log(color);
-
-    
+console.log(color);  
 }
+
+//Step 10: Arrow Functions
+
+function add(a,b)    {
+    const add = (a, b) => a + b;
+    return a+b;
+}
+console.log(add(2, 3)); // 5
+
+function multi(a,b) {
+   const multi= (a,b) => a * b;
+   return a*b;
+}
+console.log(multi(5, 5));
+
+//Step 11: Template Literals
+let name = "Sonia"
+let city = "Ludhiana"
+
+console.log(`My name is ${name} and I live in ${city}`);
+
+
+let fruit = "mango";
+let price = 50;
+
+console.log(`${fruit} Price is ${price} rupees`)
+
+//Step 12: Destructuring
+
+let colors  = ["red", "green", "blue"];
+let [c1, c2] = colors;
+console.log(c1, c2);
+
+
+let nums = [10, 20, 30];
+let [a1, a2, a3] = nums;
+console.log(a1,a2,a3);
+
+
+//Step 13: Spread & Rest Operator
+
+let arr1 = [1,2];
+let arr2 = [...arr1, 3,4];
+console.log(arr2);
+
+
+function sum(...nums) {
+    return nums.reduce((a,b) => a+b)
+}
+console.log(sum(1,2,3,4));
+
