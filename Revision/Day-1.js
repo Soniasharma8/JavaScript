@@ -1,15 +1,12 @@
 /* -------------------- Practice Set -------------------- */
-
-
 // step 1 variables
-
  let name = "Sonia";
  const age = 26;
  var city = "Ludhiana";
 
  console.log(name,age,city);
 
-
+//
  let fruit = "Mango";
  console.log(fruit);
  
@@ -19,7 +16,7 @@ let student = {name: "Sonia", age: 23};
 let marks = [20,30,40];
 console.log(typeof student, typeof marks);
 
-
+//
 let colors = ["red", "green", "blue"]
 console.log(colors);
 
@@ -31,7 +28,7 @@ console.log(a + b);
 console.log(a > b);
 console.log(a === b);
 
-
+//
 let x = 7;
 let y = 3;
 console.log(x + y);
@@ -47,7 +44,7 @@ let age1 = 17;
  } else {
     console.log("Not adult")
  }
-
+//
  let num = 10;
  if(num % 2 === 0) {
     console.log("Even")
@@ -81,12 +78,12 @@ let age1 = 17;
     console.log(fruits[0]);
     console.log(fruits.length);
     
-
+//
     let nums = [1,2,3,4];
     let doubled = nums.map(n => n * 2);
     console.log(doubled);
     
-
+//
     let numbers = [2,4,6,8,10]
     let sqaure = numbers.map(n => n * n);
     console.log(sqaure);
