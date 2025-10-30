@@ -231,3 +231,83 @@ switch (productCategory) {
     break;
     default: console.log("This product category is not recognized.");
     }
+
+
+
+//Write a program to check if a number is positive, negative, or zero.
+let num = -10;
+if (num > 0) {
+  console.log("number is positive");
+} else if (num < 0) {
+  console.log("number is negative");
+} else {
+  console.log("number is zero");
+}
+
+// Write a program that prints the grade based on marks: 90–100 → A, 75–89 → B,50–74 → C,below 50 → Fail
+let marks = 91;
+if (marks >= 90) {
+  console.log("grade- A");
+} else if (marks >= 75) {
+  console.log("grade- B");
+} else if (marks >= 50) {
+  console.log("grade- C");
+} else {
+  console.log("Fail");
+}
+
+//Check whether a number is even or odd using if-else.
+let i = 4;
+if (i % 2 === 0) {
+  console.log("even");
+} else {
+  console.log("odd");
+}
+
+// Check if a person is eligible to vote (age ≥ 18).
+let age = 18;
+if (age >= 18) {
+  console.log("you are eligible for vote");
+} else {
+  console.log("you're not eligible for vote");
+}
+
+//Write a program to check if a number is positive, negative, or zero.
+let a = 0;
+if (a > 0) {
+  console.log("number is positive");
+} else if (a < 0) {
+  console.log("number is negative ");
+} else {
+  console.log("number is zero");
+}
+
+// Print "Welcome" if username is "Sonia" and password is "1234", else "Access Denied".
+let username = "sonia";
+let password = 123;
+if (username === "sonia" && password === 123) {
+  console.log("Welcome " + username);
+} else {
+  console.log("Access denied");
+}
+
+// Check if a year is a leap year (divisible by 4 and not by 100 unless divisible by 400).
+let year = 2000;
+if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+  console.log("this is a leap year");
+} else {
+  console.log("this is not a leap year");
+}
+
+//Check if a number is divisible by 3 and 5 both.
+let number = 21;
+if (number % 3 === 0 && number % 5 === 0) {
+  console.log("number is divisible by 3 and 5");
+} else {
+  console.log("number is not divisible by 3 and 5");
+}
+
+// Use ternary operator to check if a person is adult or minor.
+let age1 = 10;
+let statuss = age1 >= 18 ? "Adult" : "Minor";
+console.log(statuss);
