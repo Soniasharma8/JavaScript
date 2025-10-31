@@ -1,4 +1,81 @@
 /* *******************************Functions*********************************** */
+// 1️⃣ ✳️ Write a function that prints "Hello World" when called.
+function greet() {
+    console.log("Hello World")
+}
+greet();
+
+// 2️⃣ ✳️ Write a function named add that takes two numbers and returns their sum.
+function add(a, b) {
+    return a + b;
+}
+console.log(add(5,4));
+
+// 3️⃣ ✳️ Write a function square that takes a number and returns its square.
+function square(num) {
+    return num * num;
+}
+console.log(square(5))
+console.log(square(6))
+
+//4️⃣ ✳️ Write a function isEven that checks if a number is even or odd. 👉 If even → return "Even", else "Odd".
+function isEven(num) {
+    if (num % 2 === 0) {
+       return "even"
+    } else {
+    return "odd"
+    }
+}
+
+console.log(isEven(5))
+console.log(isEven(4))
+
+//5️⃣ ✳️ Write a function findMax that takes two numbers and returns the greater number.
+function findMax(a, b) {
+    if (a > b) {
+        return a;
+    } else {
+        return b;
+    }
+}
+console.log(findMax(10,12))
+
+//6️⃣ ✳️ Write a function greet that takes a name and prints "Hello, [name]!".
+function greet(name) {
+ console.log("Hello", name)
+}
+greet("Sonia")
+
+//7️⃣ ✳️ Write a function multiply that takes three numbers and returns their product.
+
+ function multiply(a,b,c) {
+return a*b*c;
+ }
+console.log(multiply(2,2,2))
+console.log(multiply(4,5,6))
+
+//8️⃣ ✳️ Write a function countCharacters that takes a string and returns how many characters it has.
+function countCharaters(str) {
+    return str.length; 
+}
+console.log(countCharaters("This is a string"))
+
+// 9️⃣ ✳️ Write a function getFullName that takes firstName and lastName and returns full name.
+function getFullName(name) {
+    console.log("Write Your Full Name: ", name)
+}
+getFullName("Sonia Sharma");
+
+//🔟 ✳️ Write a function calculateArea that takes radius and returns the area of circle. 👉 Formula: πr² (use 3.14 for π)
+function calculateArea(radius) {
+  return 3.14 * radius * radius;
+}
+console.log(calculateArea(5)); // 78.5
+console.log(calculateArea(10)); // 314
+--------------------------------------------------------------------------------
+
+
+
 
 function sayName() {
   console.log("s");
@@ -113,3 +190,4 @@ function returnSecondValue(getArray) {
   return getArray[2];
 }
 console.log(returnSecondValue(myNewArray));
+
