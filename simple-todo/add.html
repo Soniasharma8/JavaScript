@@ -1,0 +1,57 @@
+/* ---------- add.html ---------- */
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Todo - Add / Edit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="top">
+        <h1>➕ Add / Edit Task</h1>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">All</a>
+          <a href="add.html" class="nav-link active">Add</a>
+          <a href="completed.html" class="nav-link">Completed</a>
+        </nav>
+      </header>
+
+      <form id="taskForm" class="form-card">
+        <label
+          >Title
+          <input id="title" type="text" required placeholder="e.g. Study JS" />
+        </label>
+
+        <label
+          >Notes (optional)
+          <textarea id="notes" rows="3" placeholder="Add details..."></textarea>
+        </label>
+
+        <div class="row">
+          <label
+            >Due date
+            <input id="dueDate" type="date" />
+          </label>
+
+          <label
+            >Priority
+            <select id="priority">
+              <option value="">Normal</option>
+              <option value="Low">Low</option>
+              <option value="High">High</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="saveBtn" type="submit" class="btn primary">Save</button>
+          <button id="cancelBtn" type="button" class="btn">Cancel</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
