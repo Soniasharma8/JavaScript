@@ -1,0 +1,30 @@
+/* ---------- index.html ---------- */
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Todo - All Tasks</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="top">
+        <h1>📝 My Todo List</h1>
+        <nav class="nav">
+          <a href="index.html" class="nav-link active">All</a>
+          <a href="add.html" class="nav-link">Add</a>
+          <a href="completed.html" class="nav-link">Completed</a>
+        </nav>
+      </header>
+
+      <div class="search-row">
+        <input id="search" type="text" placeholder="Search tasks or notes..." />
+      </div>
+
+      <ul id="taskList" class="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
