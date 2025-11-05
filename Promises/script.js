@@ -223,3 +223,34 @@ async function finalResult() {
   console.log("All steps done");
 }
 finalResult();
+
+//Ek promise banao jo 2 second ke baad "Hello from Promise" print kare (resolve kare).
+let myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("Hello From Promise")
+    }, 2000)
+})
+myPromise.then((message) => {
+    console.log(message)
+})
+
+
+//Ek promise banao jo 3 second ke baad reject ho jaye message ke sath "Something went wrong".
+let myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        reject("Something went Wrong")
+    }, 3000)
+})
+myPromise.catch((message) => {
+    console.log(message)
+})
+
+//Promise ke andar setTimeout() use karke "Data Loaded" print karvao.
+let myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("Data Loaded")
+    }, 2000)
+})
+myPromise.then((message) => {
+    console.log(message)
+})
